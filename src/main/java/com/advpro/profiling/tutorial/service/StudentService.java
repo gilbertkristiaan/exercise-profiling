@@ -24,9 +24,9 @@ public class StudentService {
     public List<StudentCourse> getAllStudentsWithCourses() {
         List<StudentCourse> studentCourses = studentCourseRepository.findAll();
         Map<Long, Student> studentMap = new HashMap<>();
-        List<Student> students = studentRepository.findAll();
+        List<Student> studRepo = studentRepository.findAll();
 
-        for (Student student : students) {
+        for (Student student : studRepo) {
             studentMap.put(student.getId(), student);
         }
 
@@ -42,10 +42,10 @@ public class StudentService {
     }
 
     public Optional<Student> findStudentWithHighestGpa() {
-        List<Student> students = studentRepository.findAll();
+        List<Student> studRepo = studentRepository.findAll();
         Student highestGpaStudent = null;
         double highestGpa = 0.0;
-        for (Student student : students) {
+        for (Student student : studRepo) {
             if (student.getGpa() > highestGpa) {
                 highestGpa = student.getGpa();
                 highestGpaStudent = student;
@@ -55,12 +55,17 @@ public class StudentService {
     }
 
     public String joinStudentNames() {
-        List<Student> students = studentRepository.findAll();
-        String result = "";
-        for (Student student : students) {
-            result += student.getName() + ", ";
+        List<Student> studRepo = studentRepository.findAll();
+        StringBuilder sb = new StringBuilder();
+
+        for (Student student : studRepo) {
+            sb.append(student.getName()).append(", ");
         }
-        return result.substring(0, result.length() - 2);
+
+        if (!sb.isEmpty()) {
+            sb.delete(sb.length() - 2, sb.length());
+        }
+        return sb.toString();
     }
 }
 
