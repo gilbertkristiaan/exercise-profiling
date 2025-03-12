@@ -1,1 +1,0 @@
-## Gilbert Kristian - Adpro A
