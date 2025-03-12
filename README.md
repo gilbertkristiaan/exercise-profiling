@@ -2,9 +2,9 @@
 ---
 
 # Module 5: Java Profiling
-## JMeter Report & Test Results :
+### JMeter Report & Test Results :
 
-## Endpoint `/all-student`:
+### Endpoint `/all-student`:
 Test Result JMeter :
 <img src="/image/jmeter-all-student.png">
 
@@ -17,7 +17,7 @@ After Optimization JMeter :
 Test Result JMeter Post-Profiling:
 <img src="/image/jmeter-after-all-student.png">
 
-## Endpoint `/all-student-name`:
+### Endpoint `/all-student-name`:
 Test Result JMeter :
 <img src="/image/jmeter-all-student-name.png">
 
@@ -30,7 +30,7 @@ After Optimization JMeter :
 Test Result JMeter Post-Profiling:
 <img src="/image/jmeter-after-all-student-name.png">
 
-## Endpoint `/highest-gpa`:
+### Endpoint `/highest-gpa`:
 Test Result JMeter :
 <img src="/image/jmeter-highest-gpa.png">
 
@@ -48,7 +48,7 @@ Test Result JMeter Post-Profiling:
 The results indicate an improvement in performance based on the recorded sample times. The execution time was reduced after optimization compared to the initial execution time. This suggests that the optimization process was effective, utilizing JMeter and IntelliJ Profiler for analysis.
 
 ---
-## Reflection
+## Reflection:
 
 ## 1. What is the difference between the approach of performance testing with JMeter and profiling with IntelliJ Profiler in the context of optimizing application performance?
 
