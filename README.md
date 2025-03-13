@@ -19,9 +19,9 @@ Test Result JMeter Post-Profiling:
 
 Execution Time `getAllStudentWithCourses()` from Intellij Profiler:
 
-| Before   | After    | Diff Percentage |
-|----------|--------  |---------------- |
-| 4,277 ms | 1,183 ms | 72.34%          |
+| Before    | After    | Diff Percentage |
+|-----------|--------  |-----------------|
+| 14,277 ms | 1,183 ms | 91.71%          |
 
 ### Endpoint `/all-student-name`:
 Test Result JMeter :
