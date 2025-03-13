@@ -75,27 +75,27 @@ The results indicate an improvement in performance based on the recorded sample 
 
 ## 2. How does the profiling process help you in identifying and understanding the weak points in your application?
 
-The profiling process is valuable for identifying application bottlenecks causing performance issues. During profiling:
-- The profiler collects and analyzes data to identify bottleneck areas
-- It provides key information such as CPU usage, memory allocation, garbage collection activity, and thread concurrency
-- This data helps understand which specific parts of the application are causing performance problems
+The profiling process is essential for diagnosing performance bottlenecks in my application. During profiling:
+- It collects and analyzes runtime data, helping me pinpoint areas that slow down execution.
+- It provides crucial insights such as CPU consumption, memory usage, garbage collection behavior, and thread activity.
+- By interpreting this data, I can identify specific functions or processes that contribute to performance issues, allowing me to optimize my code effectively.
 
 ## 3. Do you think IntelliJ Profiler is effective in assisting you to analyze and identify bottlenecks in your application code?
 
-According to the document, IntelliJ Profiler is considered effective in finding application bottlenecks due to features like:
+Yes, because Intellij Profiler provides me with : 
 - Flame graphs that visualize which parts of the code consume significant execution time
 - Method List tab that provides execution time information
 - Diff execution time metrics that show performance improvements after optimization without requiring manual calculations
 
 ## 4. What are the main challenges you face when conducting performance testing and profiling, and how do you overcome these challenges?
 
-The main challenges mentioned include:
+The main challenges I face are:
 - Understanding profiling results: Properly interpreting profiling data to identify actual bottlenecks
-- Implementing optimizations: Refactoring code to address identified bottlenecks effectively, which is considered a significant challenge
+- Implementing optimizations: Refactoring code to address identified bottlenecks effectively
 
 ## 5. What are the main benefits you gain from using IntelliJ Profiler for profiling your application code?
 
-Key benefits of using IntelliJ Profiler are:
+The main benefits I gain are:
 - Integration with the IDE, eliminating the need for third-party applications
 - Simplified setup process since profiling is built into the development environment
 - Helpful visualizations like flame graphs
@@ -103,12 +103,14 @@ Key benefits of using IntelliJ Profiler are:
 
 ## 6. How do you handle situations where the results from profiling with IntelliJ Profiler are not entirely consistent with findings from performance testing using JMeter?
 
+When I encounter inconsistencies between IntelliJ Profiler and JMeter results, I handle them by:
 - Recheck JMeter configurations.
 - Validate profiling metrics.
 - Investigate external factors (e.g., hardware, network latency).
 
 ## 7. What strategies do you implement in optimizing application code after analyzing results from performance testing and profiling? How do you ensure the changes you make do not affect the application's functionality?
 
+After analyzing performance testing and profiling results, I optimize my application by:
 1. Reducing database calls:
    - Refactored `getAllStudentsWithCourses()` to retrieve all student-course relationships in a single database call
    - Used a HashMap to store student IDs, enabling efficient lookups during StudentCourse iteration
@@ -120,3 +122,5 @@ Key benefits of using IntelliJ Profiler are:
 3. Query optimization:
    - Improved the `findStudentWithHighestGpa()` method by replacing manual iteration with a direct SQL query.
    - Used `SELECT * FROM STUDENTS ORDER BY GPA DESC LIMIT 1` to retrieve the student with highest GPA.
+
+To ensure that optimizations don't affect application functionality, I can create unit tests before making any code changes. While I didn't implement tests for this, I know that using unit tests would be the appropriate approach to verify that the application still functions correctly after performance optimizations.
