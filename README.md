@@ -78,7 +78,7 @@ The results indicate an improvement in performance based on the recorded sample 
 The profiling process is valuable for identifying application bottlenecks causing performance issues. During profiling:
 - The profiler collects and analyzes data to identify bottleneck areas
 - It provides key information such as CPU usage, memory allocation, garbage collection activity, and thread concurrency
-- This data helps developers understand which specific parts of the application are causing performance problems
+- This data helps understand which specific parts of the application are causing performance problems
 
 ## 3. Do you think IntelliJ Profiler is effective in assisting you to analyze and identify bottlenecks in your application code?
 
@@ -106,7 +106,6 @@ Key benefits of using IntelliJ Profiler are:
 - Recheck JMeter configurations.
 - Validate profiling metrics.
 - Investigate external factors (e.g., hardware, network latency).
-- Consult documentation and experts.
 
 ## 7. What strategies do you implement in optimizing application code after analyzing results from performance testing and profiling? How do you ensure the changes you make do not affect the application's functionality?
 
